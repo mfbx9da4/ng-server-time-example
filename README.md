@@ -1,15 +1,10 @@
-# Angular Socket.IO IM Demo
+# ng-server-time example
 
-A simple instant messaging app to demo the [AngularJS Socket.IO Seed](https://github.com/btford/angular-socket-io-seed). [A walkthrough of writing the application is available on my blog](http://briantford.com/blog/angular-socket-io.html).
+Example usage of https://github.com/mfbx9da4/ng-server-time
 
-## Running it
-
-First, grab the dependencies with npm:
+## Run
 
     npm install
-
-Then run the app like so:
-
     node app.js
 
-And navigate to `localhost:3000`
+And navigate to http://localhost:3000

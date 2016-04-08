@@ -3,9 +3,11 @@ extends layout
 block body
   h1 Ng Server Time Demo
   div(ng-controller='AppCtrl', ng-cloak)
-    h2 Server: {{server}}
-    h2 Browser: {{browser}}
-    h2 Offset between browser and server {{getOffset}} milliseconds
+    div(ng-if="server != 'Invalid date'")
+      h3 Server: {{server}}
+      h3 Browser: {{browser}}
+      h3 Offset {{getOffset}} milliseconds
+      p Try changing your system time temporarily to watch synchronization in action.
 
   script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js')
