@@ -1,5 +1,5 @@
 {
-  "name": "angular-socket-io-im",
+  "name": "ng-server-time-example",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -7,5 +7,22 @@
     "jade": ">= 0.26.1",
     "ng-server-time": "^1.0.2",
     "socket.io": ">= 0.9.6"
-  }
+  },
+  "description": "Example usage of https://github.com/mfbx9da4/ng-server-time",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfbx9da4/ng-server-time-example.git"
+  },
+  "author": "David Alberto Adler dalberto.adler@gmail.com mfbx9da4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mfbx9da4/ng-server-time-example/issues"
+  },
+  "homepage": "https://github.com/mfbx9da4/ng-server-time-example#readme"
 }
