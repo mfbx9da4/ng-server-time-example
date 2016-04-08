@@ -43,8 +43,10 @@ app.get('/partials/:name', routes.partials);
 app.get('*', routes.index);
 
 // Socket.io Communication
-
-io.sockets.on('connection', socket);
+var server_time = require('ng-server-time');
+io.sockets.on('connection', function(socket) {
+    server_time.init(socket);
+});
 
 // Start server
 

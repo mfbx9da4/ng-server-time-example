@@ -1,20 +1,8 @@
-/* app css stylesheet */
-
-.overflowable {
-  height: 240px;
-  overflow-y: auto;
-  border: 1px solid #000;
-}
-
-.overflowable p {
-  margin: 0;
-}
-
-.col {
-  float: left;
-  width: 350px;
-}
-
-.clr {
-  clear: both;
+body {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	color: #222;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
 }
