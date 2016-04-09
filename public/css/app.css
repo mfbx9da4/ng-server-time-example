@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
 	margin: 0 auto;
 	max-width: 426px;
 	color: #222;
 	line-height: 24px;
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
 
