@@ -10,8 +10,8 @@ app.factory('socket', function() {
 app.controller('AppCtrl', function($scope, ServerTime) {
 	window.st = ServerTime;
 	function updateTime() {
-		$scope.server = moment(ServerTime.now()).format('H:m:SSSS');
-		$scope.browser = moment(Date.now()).format('H:m:SSSS');
+		$scope.server = moment(ServerTime.now()).format('HH:mm:SSSS');
+		$scope.browser = moment(Date.now()).format('HH:mm:SSSS');
 
 		// Date.now() on the server
 		$scope.now = ServerTime.now();
