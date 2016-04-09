@@ -6,9 +6,14 @@ block body
   div(ng-controller='AppCtrl', ng-cloak)
     div(ng-if="server != 'Invalid date'")
       h3 Server: {{server}}
+      small This is the current time on the heroku remote server.
       h3 Browser: {{browser}}
+      small This is the current system time from this device.
       h3 Offset {{getOffset}} milliseconds
+      small This is the difference between server and system time.
       p Try changing your system time temporarily to watch synchronization in action.
+    div(ng-if="server == 'Invalid date'")
+      p Connecting to server, please wait ...
 
   script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js')
