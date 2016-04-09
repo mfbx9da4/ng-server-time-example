@@ -5,11 +5,11 @@ block body
   h1 Ng Server Time Demo
   div(ng-controller='AppCtrl', ng-cloak)
     div(ng-if="server != 'Invalid date'")
-      h3 Server: {{server}}
+      h3 Server: <span class="time">{{server}}</span>
       small This is the current time on the heroku remote server.
-      h3 Browser: {{browser}}
+      h3 Browser: <span class="time">{{browser}}</span>
       small This is the current system time from this device.
-      h3 Offset {{getOffset}} milliseconds
+      h3 Offset <span class="time">{{getOffset}}</span> milliseconds
       small This is the difference between server and system time.
       p Try changing your system time temporarily to watch synchronization in action.
     div(ng-if="server == 'Invalid date'")
